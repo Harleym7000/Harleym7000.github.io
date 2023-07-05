@@ -1,11 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Home from './components';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import { Button } from '@mui/material';
 
 function App() {
   return (
+    <>
+    <Navbar/>
     <Home/>
+    </>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
