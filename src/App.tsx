@@ -1,15 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';
-import Navbar from './components/Navbar';
-import { Button } from '@mui/material';
+import NavBootstrap from "./components/NavBootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Home/>
+      <NavBootstrap/>
+      <Home/>
     </>
     // <div className="App">
     //   <header className="App-header">
