@@ -4,8 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Typed from 'typed.js';
 import {Button} from "react-bootstrap";
-import {ArrowDownward } from '@mui/icons-material';
-import {GitHub} from '@mui/icons-material';
 
 export default function Home(): ReactElement {
 
@@ -25,8 +23,7 @@ export default function Home(): ReactElement {
       }, []);
 
     return (
-        <div className="body">
-            <div className="onLoad">
+        <div className="body" id="home">
             <Container>
                 <Row>
                     <Col xs={12} md={6}>
@@ -73,7 +70,7 @@ export default function Home(): ReactElement {
                     <Col xs={2} md={1}>
                         <Button
                             as="a"
-                            onClick={() => window.open("https://www.github.com/Harleym7000", "_blank")}
+                            onClick={() => window.open("https://www.facebook.com", "_blank")}
                             className="socialIcon"
                         >
                             <i className="bi bi-facebook" style={{fontSize: "2rem"}}></i>
@@ -82,7 +79,7 @@ export default function Home(): ReactElement {
                     <Col xs={2} md={1}>
                         <Button
                             as="a"
-                            onClick={() => window.open("https://www.github.com/Harleym7000", "_blank")}
+                            onClick={() => window.open("https://www.instagram.com", "_blank")}
                             className="socialIcon"
                         >
                             <i className="bi bi-instagram" style={{fontSize: "2rem"}}></i>
@@ -91,53 +88,5 @@ export default function Home(): ReactElement {
                 </Row>
             </Container>
             </div>
-                    {/*    <h1 className="homeHeading1 ml-3">Hello,<br/>I'm <span className="auto-typed"></span></h1>*/}
-                    {/*    <h4 className="auto-typed"></h4>*/}
-                    {/*    <h5 className="service" style={{marginTop: 20}}>*/}
-                    {/*        I'm a freelance web developer offering <span className="full-stack">full-stack</span> web development services.</h5>*/}
-                    {/*    /!*    I graduated from Queen's University, Belfast in 2022 with a Bsc Hons in Computing and Information Technology and*!/*/}
-                    {/*    /!*    have over 1 year of experience in industry*!/*/}
-
-                    {/*<Row style={{marginTop: 70}} className="ctaButtons">*/}
-                    {/*    <Col xs={12}>*/}
-                    {/*        <Button*/}
-                    {/*            className="portfolioButton"*/}
-                    {/*            as="a"*/}
-                    {/*            variant="danger"*/}
-                    {/*            size="lg">*/}
-                    {/*            VIEW PORTFOLIO*/}
-                    {/*        </Button>*/}
-                    {/*    </Col>*/}
-                    {/*    <Col xs={12}>*/}
-                    {/*        <Button*/}
-                    {/*            className="contactButton"*/}
-                    {/*            as="a"*/}
-                    {/*            variant="outline-danger"*/}
-                    {/*            size="lg">*/}
-                    {/*            CONTACT ME*/}
-                    {/*        </Button>*/}
-                    {/*    </Col>*/}
-                    {/*</Row>*/}
-                    {/*<Col xs={12} md={7} className="homeImage">*/}
-                    {/*    <img src={mainImage} alt="test" className="mainImage"/>*/}
-                    {/*</Col>*/}
-
-        {/*<Grid container spacing={2}>*/}
-        {/*    <Grid item xs={12} md={5}>*/}
-        {/*        <Typography variant="h1" className="homeHeading1">HARLEY</Typography>*/}
-        {/*        <Typography variant="h2" className="homeHeading2">MULHOLLAND</Typography>*/}
-        {/*        <Typography variant="h5" className="auto-typed"></Typography>*/}
-        {/*    </Grid>*/}
-        {/*    <Grid item xs={12} md={7}>*/}
-        {/*        <img src={mainImage} alt="picture" className="mainImage"/>*/}
-        {/*    </Grid>*/}
-        {/*    <Grid item xs={12}>*/}
-        {/*        <div className="homeButtons">*/}
-        {/*    <Button variant="outlined">VIEW PORTFOLIO</Button>*/}
-        {/*    <Button variant="contained">GET IN TOUCH</Button>*/}
-        {/*    </div>*/}
-        {/*    </Grid>*/}
-        {/*</Grid>*/}
-        </div>
     )
 }

@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function NavBootstrap() : ReactElement {
     return (
         <>
-            <Navbar collapseOnSelect expand="md" bg="danger" data-bs-theme="dark">
+            <Navbar collapseOnSelect expand="md" bg="danger" data-bs-theme="dark" fixed="top">
                 <Container>
                     <Navbar.Brand href="#home">MWD</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -15,8 +15,8 @@ export default function NavBootstrap() : ReactElement {
                         <Nav className="me-auto">
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">Home</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
+                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link eventKey={2} href="#about">
                                 About
                             </Nav.Link>
                             <Nav.Link eventKey={3} href="#memes">
