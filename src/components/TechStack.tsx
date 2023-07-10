@@ -1,12 +1,17 @@
 import React, {ReactElement} from "react";
-import {Card, CardGroup, Row, Col} from "react-bootstrap";
+import {Card, CardGroup, Row, Col, Figure} from "react-bootstrap";
 
 export default function TechStack() : ReactElement {
+
+    const reactLogo = require('../React-icon.svg.png');
+    const javascriptLogo = require('../js.png');
+
     return (
-        <div className="techStack">
-            <div className="tech">
+        <div className="techStack pt-5">
+            <div className="tech pb-5">
         <Row>
             <CardGroup>
+                <Col sm={12} lg={4}>
                 <Card className="techStackCard">
                     <Card.Body className="text-center">
                         <i className="bi bi-code-square" style={{fontSize: "6rem"}}></i>
@@ -16,6 +21,8 @@ export default function TechStack() : ReactElement {
                         </Card.Text>
                     </Card.Body>
                 </Card>
+                </Col>
+                <Col sm={12} lg={4}>
                 <Card className="techStackCard">
                     <Card.Body className="text-center">
                         <i className="bi bi-hdd-rack" style={{fontSize: "6rem"}}></i>
@@ -25,6 +32,8 @@ export default function TechStack() : ReactElement {
                         </Card.Text>
                     </Card.Body>
                 </Card>
+                </Col>
+                    <Col sm={12} lg={4}>
                 <Card className="techStackCard">
                     <Card.Body className="text-center">
                         <i className="bi bi-check-square" style={{fontSize: "6rem"}}></i>
@@ -34,7 +43,45 @@ export default function TechStack() : ReactElement {
                         </Card.Text>
                     </Card.Body>
                 </Card>
+                    </Col>
             </CardGroup>
+        </Row>
+                <h1 className="text-white pt-5 text-center technicalSkillsHeading">My Technical Skills</h1>
+        <Row className="mt-4 justify-content-center">
+            <Col lg={1}>
+            <Figure>
+                <Figure.Image
+                    width={100}
+                    alt="React Logo"
+                    src={reactLogo}
+                />
+                <Figure.Caption className="text-white text-center">
+                    React
+                </Figure.Caption>
+            </Figure>
+            </Col>
+            <Col lg={1}>
+            <Figure>
+                <Figure.Image
+                    alt="React Logo"
+                    src={javascriptLogo}
+                />
+                <Figure.Caption className="text-white text-center">
+                    Javascript
+                </Figure.Caption>
+            </Figure>
+            </Col>
+            <Col lg={1}>
+            <Figure>
+                <Figure.Image
+                    alt="React Logo"
+                    src={reactLogo}
+                />
+                <Figure.Caption className="text-white text-center">
+                    React
+                </Figure.Caption>
+            </Figure>
+            </Col>
         </Row>
         </div>
         </div>

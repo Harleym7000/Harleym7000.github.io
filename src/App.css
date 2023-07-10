@@ -26,11 +26,11 @@ html {
 .tech {
   width: 70%;
   margin: auto;
+  margin-top: -10%;
 }
 
 .techStack {
   background-color: #252525;
-  min-height: 50vh;
   width: 100%;
 }
 
@@ -43,7 +43,6 @@ html {
   background-color: #252525 !important;
   color: #fff !important;
   border: 1px solid #fff0f0 !important;
-  margin-top: -10%;
   padding-bottom: 3%;
 }
 
@@ -108,6 +107,19 @@ html {
   height: 70%;
 }
 
+.figure-img {
+  min-height: 100px !important;
+}
+
+.figure-caption {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+.technicalSkillsHeading {
+  margin-top: 5%;
+}
+
 @media (max-width: 350px) {
   .mainImage {
     width: 60%;
@@ -156,6 +168,14 @@ html {
     width: 100%;
     margin-top: 10%;
   }
+
+  .techStackCard {
+    margin-top: -5%;
+  }
+
+  .tech {
+    margin-top: -20%;
+  }
 }
 
 @media(min-width: 768px) {
@@ -175,6 +195,10 @@ html {
   .social {
     padding-top: 10%;
   }
+
+  .tech {
+    margin-top: -15%;
+  }
 }
 
 @media(min-width: 1024px) {
@@ -193,5 +217,9 @@ html {
 
   .social {
     padding-top: 2%;
+  }
+
+  .tech {
+    margin-top: -10%;
   }
 }
