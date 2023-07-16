@@ -26,11 +26,9 @@ html {
 .tech {
   width: 70%;
   margin: auto;
-  margin-top: -10%;
 }
 
 .techStack {
-  background-color: #252525;
   width: 100%;
 }
 
@@ -44,6 +42,7 @@ html {
   color: #fff !important;
   border: 1px solid #fff0f0 !important;
   padding-bottom: 3%;
+  min-height: 80vh;
 }
 
 #about {
@@ -52,12 +51,25 @@ html {
   width: 70%;
   margin: auto;
   margin-top: 3%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
-.aboutHeading {
+.aboutHeading, .portfolioHeading {
   font-size: 50px;
   font-weight: bolder;
+}
+
+#portfolio {
+  width: 100%;
+  min-height: 140vh;
+  background-color: #252525;
+  color: #fff;
+}
+
+.portfolioContent {
+  width: 70%;
+  margin: auto;
+  padding-top: 5%;
 }
 
 .social {
@@ -220,6 +232,6 @@ html {
   }
 
   .tech {
-    margin-top: -10%;
+    margin-top: -15%;
   }
 }
