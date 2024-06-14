@@ -22,6 +22,11 @@ export default function Home(): ReactElement {
         };
       }, []);
 
+    const scrollToPortfolio = () => {
+        // @ts-ignore
+        document.getElementById("portfolio").scrollIntoView();
+    }
+
     return (
         <div className="body" id="home">
             <Container>
@@ -30,12 +35,13 @@ export default function Home(): ReactElement {
                             <h1 className="homeHeading1 ml-3">Hello,<br/>I'm <span className="auto-typed"></span></h1>
                             <h4 className="auto-typed"></h4>
                             <h5 className="service" style={{marginTop: 20}}>
-                                I'm a freelance web developer offering <span className="full-stack">full-stack</span> web development services.</h5>
+                                I'm a web developer offering <span className="full-stack">full-stack</span> web development services.</h5>
                         <Row style={{marginTop: 70}} className="ctaButtons">
                             <Col xs={12} md={6} lg={5}>
                                 <Button
                                     className="portfolioButton"
                                     as="a"
+                                    onClick={() => scrollToPortfolio()}
                                     variant="danger"
                                     size="lg">
                                     VIEW PORTFOLIO

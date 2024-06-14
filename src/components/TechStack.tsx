@@ -47,43 +47,6 @@ export default function TechStack() : ReactElement {
                     </Col>
             </CardGroup>
         </Row>
-                <h1 className="pt-5 text-center technicalSkillsHeading">My Technical Skills</h1>
-        <Row className="mt-4 justify-content-center">
-            <Col lg={2}>
-            <Figure>
-                <Figure.Image
-                    width={100}
-                    alt="React Logo"
-                    src={reactLogo}
-                />
-                <Figure.Caption className="text-center">
-                    React
-                </Figure.Caption>
-            </Figure>
-            </Col>
-            <Col lg={2}>
-            <Figure>
-                <Figure.Image
-                    alt="React Logo"
-                    src={javascriptLogo}
-                />
-                <Figure.Caption className="text-center">
-                    Javascript
-                </Figure.Caption>
-            </Figure>
-            </Col>
-            <Col lg={2}>
-            <Figure>
-                <Figure.Image
-                    alt="React Logo"
-                    src={reactLogo}
-                />
-                <Figure.Caption className="text-center">
-                    React
-                </Figure.Caption>
-            </Figure>
-            </Col>
-        </Row>
         </div>
         </div>
     )

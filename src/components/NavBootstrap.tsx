@@ -19,7 +19,7 @@ export default function NavBootstrap() : ReactElement {
                             <Nav.Link eventKey={2} href="#about">
                                 About
                             </Nav.Link>
-                            <Nav.Link eventKey={3} href="#memes">
+                            <Nav.Link eventKey={3} href="#portfolio">
                                 Portfolio
                             </Nav.Link>
                             <Nav.Link eventKey={4} href="#memes">
