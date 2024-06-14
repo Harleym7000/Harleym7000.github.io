@@ -42,7 +42,7 @@ html {
   color: #fff !important;
   border: 1px solid #fff0f0 !important;
   padding-bottom: 3%;
-  min-height: 80vh;
+  min-height: 60vh;
 }
 
 #about {
@@ -61,7 +61,7 @@ html {
 
 #portfolio {
   width: 100%;
-  min-height: 140vh;
+  min-height: 120vh;
   background-color: #252525;
   color: #fff;
 }
@@ -145,13 +145,13 @@ html {
   }
 
   .body {
-    height: 105vh;
+    height: 125vh;
   }
 
   .auto-typed {
     padding-left: 3%;
     text-align: center;
-    }
+  }
 
   .homeImage {
     padding-top: 10%;
