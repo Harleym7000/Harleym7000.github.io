@@ -33,5 +33,5 @@ export default function NavBootstrap() : ReactElement {
                 </Container>
             </Navbar>
         </>
-        );
+    );
 }

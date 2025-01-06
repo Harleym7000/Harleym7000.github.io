@@ -10,44 +10,44 @@ export default function TechStack() : ReactElement {
         <div className="techStack">
             <div className="tech pb-5">
                 <h1 className="text-white text-center mt-5 mb-4">What is Full-Stack Development?</h1>
-        <Row>
-            <CardGroup>
-                <Col sm={12} lg={4}>
-                <Card className="techStackCard">
-                    <Card.Body className="text-center">
-                        <i className="bi bi-code-square" style={{fontSize: "6rem"}}></i>
-                        <Card.Text>
-                            <h3>Front-End Development</h3>
-                            <h5 className="mt-4 cardDesc">I will provide a seamless user experience, with responsiveness for all devices, coded from scratch and compatible with modern browsers</h5>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                </Col>
-                <Col sm={12} lg={4}>
-                <Card className="techStackCard">
-                    <Card.Body className="text-center">
-                        <i className="bi bi-hdd-rack" style={{fontSize: "6rem"}}></i>
-                        <Card.Text>
-                            <h3>Back-End Development</h3>
-                            <h5 className="mt-4 cardDesc">I will provide the code that handles how your data is stored, as well as defining the business logic your site needs to work as it should</h5>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                </Col>
-                    <Col sm={12} lg={4}>
-                <Card className="techStackCard">
-                    <Card.Body className="text-center">
-                        <i className="bi bi-check-square" style={{fontSize: "6rem"}}></i>
-                        <Card.Text>
-                            <h3>TDD Approach</h3>
-                            <h5 className="mt-4 cardDesc">I adopt a Test-Driven Development approach to writing code, helping to ensure that the code I write actually does work as intended</h5>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                    </Col>
-            </CardGroup>
-        </Row>
-        </div>
+                <Row>
+                    <CardGroup>
+                        <Col sm={12} lg={4}>
+                            <Card className="techStackCard">
+                                <Card.Body className="text-center">
+                                    <i className="bi bi-code-square" style={{fontSize: "6rem"}}></i>
+                                    <Card.Text>
+                                        <h3>Front-End Development</h3>
+                                        <h5 className="mt-4 cardDesc">I will provide a seamless user experience, with responsiveness for all devices, coded from scratch and compatible with modern browsers</h5>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col sm={12} lg={4}>
+                            <Card className="techStackCard">
+                                <Card.Body className="text-center">
+                                    <i className="bi bi-hdd-rack" style={{fontSize: "6rem"}}></i>
+                                    <Card.Text>
+                                        <h3>Back-End Development</h3>
+                                        <h5 className="mt-4 cardDesc">I will provide the code that handles how your data is stored, as well as defining the business logic your site needs to work as it should</h5>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col sm={12} lg={4}>
+                            <Card className="techStackCard">
+                                <Card.Body className="text-center">
+                                    <i className="bi bi-check-square" style={{fontSize: "6rem"}}></i>
+                                    <Card.Text>
+                                        <h3>TDD Approach</h3>
+                                        <h5 className="mt-4 cardDesc">I adopt a Test-Driven Development approach to writing code, helping to ensure that the code I write actually does work as intended</h5>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </CardGroup>
+                </Row>
+            </div>
         </div>
     )
 }
