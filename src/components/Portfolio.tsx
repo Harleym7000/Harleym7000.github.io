@@ -15,14 +15,6 @@ export default function Portfolio(): ReactElement {
                 <div className="carouselContainer">
                     <Carousel indicators={false} className="pt-5">
                         <Carousel.Item>
-                            <img src={pcaHomeImage} className="img-fluid"/>
-                            <div className="text-center">
-                            <a href="https://www.portstewartca.org" target="_blank">
-                                <Button variant="danger" className="mt-5 portfolioLinks" size="lg">Visit site</Button>
-                            </a>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
                             <img src={amrHomeImage} className="img-fluid"/>
                             <div className="text-center">
                                 <a href="https://www.amresources.net" target="_blank">
