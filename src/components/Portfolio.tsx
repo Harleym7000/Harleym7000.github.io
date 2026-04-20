@@ -1,39 +1,37 @@
 import React, {ReactElement} from "react";
-import {Card, Row, Col, Button} from "react-bootstrap";
+import {Button, Carousel} from "react-bootstrap";
 
-export default function Portfolio() : ReactElement {
+export default function Portfolio(): ReactElement {
 
     const pcaHomeImage = require('../pca.PNG');
+    const amrHomeImage = require('../amr.png');
 
     return (
         <div id="portfolio" className="mb-5">
+            <h1 className="portfolioHeading mb-3 pt-4 text-center">Portfolio</h1>
             <div className="portfolioContent">
-                <h1 className="portfolioHeading mb-3">Portfolio</h1>
-                <p>Below you can find my portfolio of full-stack web development projects which are currently live.
-                    Feel free to click on visit and have a look around!</p>
-                <Row>
-                    <Col lg={6}>
-                        <Card>
-                            <Card.Img variant="top" src={pcaHomeImage} />
-                            <Card.Body>
-                                <Card.Title>Portstewart Community Association</Card.Title>
-                                <Card.Text>
-                                    Portstewart Community Association is a charitable organisation who currently organises and implemets The Red Sails Festival alongside other events and activities for the benefit of the community.
-                                </Card.Text>
-                                <div className="d-flex flex-row-reverse">
-                                    <Button
-                                        as="a"
-                                        onClick={() => window.open("https://www.portstewartca.org", "_blank")}
-                                        variant="danger"
-                                    >
-                                        Visit
-                                        <i className="bi bi-box-arrow-up-right" style={{fontSize: "1rem", paddingLeft: 5}}></i>
-                                    </Button>
-                                </div>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
+                <h4 className="text-center">Below you can find my portfolio of full-stack web development projects.</h4>
+                <h4 className="text-center">Feel free to click on visit and have a look around!</h4>
+                <div className="carouselContainer">
+                    <Carousel indicators={false} className="pt-5">
+                        <Carousel.Item>
+                            <img src={pcaHomeImage} className="img-fluid"/>
+                            <div className="text-center">
+                            <a href="https://www.portstewartca.org" target="_blank">
+                                <Button variant="danger" className="mt-5 portfolioLinks" size="lg">Visit site</Button>
+                            </a>
+                            </div>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img src={amrHomeImage} className="img-fluid"/>
+                            <div className="text-center">
+                                <a href="https://www.amresources.net" target="_blank">
+                                    <Button variant="danger" className="mt-5 portfolioLinks" size="lg">Visit site</Button>
+                                </a>
+                            </div>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
             </div>
         </div>
     )
