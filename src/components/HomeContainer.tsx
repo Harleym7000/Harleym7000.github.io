@@ -11,7 +11,6 @@ export default function HomeContainer() : ReactElement {
                 <Home/>
                 <About/>
                 <Portfolio/>
-                <TechStack/>
                 </div>
         </>
     )
