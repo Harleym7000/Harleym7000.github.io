@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import HomeContainer from './components/HomeContainer';
-import NavBootstrap from "./components/NavBootstrap";
+import HeaderNavbar from "./components/HeaderNavbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <>
-      <NavBootstrap/>
+      <HeaderNavbar/>
       <HomeContainer/>
     </>
   );

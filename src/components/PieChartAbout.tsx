@@ -42,8 +42,6 @@ export default function PieChartAbout() {
                     paddingAngle: 4,
                 },
             ]}
-            width={500}
-            height={500}
         />
     );
 }

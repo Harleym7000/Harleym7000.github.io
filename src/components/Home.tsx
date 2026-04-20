@@ -10,19 +10,6 @@ export default function Home(): ReactElement {
 
     const mainImage = require('../pi.png');
 
-    // useEffect(() => {
-    //     const typed = new Typed(".auto-typed", {
-    //         strings: ["Harley Mulholland", "a Web Developer"],
-    //         typeSpeed: 60,
-    //         backSpeed: 60,
-    //         loop: true
-    //     });
-    //
-    //     return () => {
-    //         typed.destroy();
-    //     };
-    // }, []);
-
     const scrollToPortfolio = () => {
         // @ts-ignore
         document.getElementById("portfolio").scrollIntoView();
@@ -33,7 +20,7 @@ export default function Home(): ReactElement {
             <Container fluid>
                 <Row className="align-items-center mx-5">
                     <Col xs={12} md={6}>
-                        <Typography variant={"h2"} fontWeight={"bold"} className="fira-sans">
+                        <Typography variant={"h2"} fontWeight={"bold"} className="fira-sans mt-5 pt-4 pt-md-0 mt-md-0">
                             HM Tech Solutions
                         </Typography>
                         <Typography variant={"h5"} className="fira-sans sub-heading-text mt-3">
@@ -53,7 +40,7 @@ export default function Home(): ReactElement {
                             </Col>
                             <Col sm={6}>
                                 <Button
-                                    className="contactButton"
+                                    className="contactButton mt-4 mt-md-0"
                                     as="a"
                                     variant="outline-danger"
                                     size="lg">

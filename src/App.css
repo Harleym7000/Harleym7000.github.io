@@ -98,6 +98,8 @@ html, body {
 
 #about {
     min-height: 50vh;
+    width: 95%;
+    margin: auto;
 }
 
 .service {

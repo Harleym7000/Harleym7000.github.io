@@ -7,11 +7,11 @@ import PieChartAbout from "./PieChartAbout";
 export default function About(): ReactElement {
     return (
         <>
-            <div id="about" className="mx-5 d-flex">
+            <div id="about" className="d-flex">
                 <Container fluid className="d-flex">
                     <Row className="d-flex align-items-center pt-4 pb-4">
-                        <Col sm={12} md={6}>
-                            <Typography variant="h3" className="fira-sans-heading">About Me</Typography>
+                        <Col sm={12} lg={6} className={"mx-3"}>
+                            <Typography variant="h3" className="fira-sans-heading mb-3 mt-2">About Me</Typography>
                             <Typography variant="h5" className="fira-sans-text">Hi, I'm Harley and I'm a freelance <span
                                 className="full-stack">full stack</span> web developer, UI designer and PC hardware
                                 repair
@@ -21,15 +21,15 @@ export default function About(): ReactElement {
                                 experience in industry, <strong>HM Tech Solutions</strong> can bring your business
                                 websites to life.</Typography>
                         </Col>
-                        <Col sm={12} md={6} className="d-flex justify-content-center">
-                            <Image src={image} roundedCircle width={480}/>
+                        <Col sm={12} lg={6} className="d-flex justify-content-center">
+                            <Image src={image} roundedCircle fluid className={"mt-4"}/>
                         </Col>
                     </Row>
                 </Container>
             </div>
             <Typography variant={"h3"} className={"fira-sans-heading mt-5 mb-3 text-center"}>My skills & experience</Typography>
             <Container fluid className={"d-flex flex-wrap justify-content-center"}>
-                <div className={"d-flex mb-5"}>
+                <div className={"d-flex mb-5 mt-4 mt-md-0"}>
                     <PieChartAbout/>
                 </div>
             </Container>
