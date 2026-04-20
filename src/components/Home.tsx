@@ -38,7 +38,7 @@ export default function Home(): ReactElement {
                         </Typography>
                         <Typography variant={"h5"} className="fira-sans sub-heading-text mt-3">
                             I am a freelancer based in the UK offering a range of technology solutions
-                            for your business including web development, web design, PC building, hardware repairs <br/>and more!
+                            for your business including web development, web design, PC building, hardware repairs and more!
                         </Typography>
                         <Row className="mt-5">
                             <Col sm={6}>

@@ -1,8 +1,8 @@
 import React, {ReactElement} from "react";
 import Home from "./Home";
 import About from "./About"
-import TechStack from "./TechStack";
 import Portfolio from "./Portfolio";
+import Footer from "./Footer";
 
 export default function HomeContainer() : ReactElement {
     return (
@@ -11,6 +11,7 @@ export default function HomeContainer() : ReactElement {
                 <Home/>
                 <About/>
                 <Portfolio/>
+                <Footer/>
                 </div>
         </>
     )
