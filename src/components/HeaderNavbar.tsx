@@ -15,7 +15,7 @@ export default function HeaderNavbar(): ReactElement {
                 <Container fluid>
                     <div className="headerNavContainer mx-lg-5">
                         <a href="/" className="headerNavLogo d-flex align-items-center text-decoration-none">
-                            <Image src={logo} width={50} alt="HM Tech Logo"/>
+                            {/*<Image src={logo} width={50} alt="HM Tech Logo"/>*/}
                             <Typography
                                 className="ms-1"
                                 variant="h5"
